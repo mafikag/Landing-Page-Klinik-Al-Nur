@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{   
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+.navbar{
+    position: fixed;
+    background-color: #02bdb6;
+    padding-top: 0;
+    padding-bottom: 0;
+    opacity: 0.8;
+}
+
+.navbar-logo{
+    width: 60px;
+}
+
+.navbar-brand{
+    padding-top: 10px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    
+}
+
+.navbar-nav{
+    margin-left: 60%;
+}
+
+.nav-link{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container-slide{
+    position: relative;
+}
+
+.img1{
+    position: absolute;
+    object-fit: cover;
+    width: 96rem;
+    height: 775px;
+}
+
+.img2{
+    position: absolute;
+    object-fit: cover;
+    width: 96rem;
+    height: 775px;
+}
+
+.Greet{
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    padding-top: 20%;
+    color: white;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: larger;
+}
+
+.page{
+    position: absolute;
+    top: 0;
+    margin-top: 45%;
+    margin-left: 49%;
+}
+
+.dot{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 3px;
+    background-color: transparent;
+    transition: background-color 0.6s ease;
+    border-radius: 50%;
+    border: 1px solid white;
+    top: 0;
+    display: inline-block;
+}
+
+.dot.active{
+    background-color: white;
+}
+
+.dot:hover{
+    background-color: white;
+}
+
+.image-slide.active1{
+    animation: slide1-on 1s;
+    animation-timing-function: ease-in;
+}
+.image-slide.active2{
+    animation: slide2-on 1s;
+    animation-timing-function: ease-in;
+}
+
+.image-slide.off2{
+    animation: slide-off 1s;
+    animation-fill-mode: forwards;
+}
+
+.image-slide.off1{
+    animation: slide-off 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide1-on{
+    0%{margin-left: 100%; opacity: 0;}
+    50%{opacity: 0.5;}
+    100%{margin-left: 0%; opacity: 1;}
+
+}
+@keyframes slide2-on{
+    0%{margin-left: -100%; opacity: 0;}
+    50%{opacity: 0.5;}
+    100%{margin-right: 100%; opacity: 1;}
+}
+
+@keyframes slide-off{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+.about-container{
+    position: relative;
+    height: 590px;
+    margin-bottom: 185px;
+}
+
+.judul{
+    position: relative;
+    font-family: 'Ubuntu',sans-serif;
+    text-align: center;
+    font-size: 40px;
+    top: 80px;
+}
+
+.about-content{
+    position: relative;
+    font-family: 'Ubuntu',sans-serif;
+    padding-right: 55%;
+    padding-top: 160px;
+    padding-left: 10%;
+}
+
+.about-hero{
+    position: absolute;
+    top: 200px;
+    margin-left: 57rem;
+    transition: margin-left 0.2s ease-in;
+}
+
+.hero-img{
+    width: 550px;
+    transition: box-shadow 0.2s ease-in;
+}
+
+.about-hero:hover{
+    margin-left: 56rem;
+}
+
+.hero-img:hover{   
+    box-shadow: 3px 3px 0px #000;
+}
+
+.about-garis{
+    display: block;
+    width: 200px;
+    border-top: 3px solid #02bdb6;
+    margin-bottom: 10px;
+}
+
+.service-container{
+    background-color: #02bdb6;
+    position: relative;
+    height: 775px;
+}
+
+.judul-service{
+    position: relative;
+    font-family: 'Ubuntu',sans-serif;
+    text-align: center;
+    font-size: 40px;
+    top: 0;
+}
+
+.lingkaran1{
+    position: absolute;
+    width: 150px;
+	height: 150px;
+	background: #dac52c;
+	border-radius: 100%;
+    border:2px solid #000;
+    top: 22rem;
+    left: 150px;
+    z-index: 1;
+}
+
+.box1{
+    position: absolute;
+    background-color: #dac52c;
+    display: block;
+    width: 350px;
+    height: 120px;
+    border: 3px solid #dac52c;
+    top: 23rem;
+    left: 250px;
+    z-index: 0;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-left: 70px;
+}
+
+.lingkaran2{
+    position: absolute;
+    width: 150px;
+	height: 150px;
+	background: #dac52c;
+	border-radius: 100%;
+    border:2px solid #000;
+    top: 9rem;
+    left: 200px;
+    z-index: 1;
+}
+
+.box2{
+    position: absolute;
+    background-color: #dac52c;
+    display: block;
+    width: 350px;
+    height: 120px;
+    border: 3px solid #dac52c;
+    top: 10rem;
+    left: 300px;
+    z-index: 0;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-left: 70px;
+}
+
+.lingkaran3{
+    position: absolute;
+    width: 150px;
+	height: 150px;
+	background: #dac52c;
+	border-radius: 100%;
+    border:2px solid #000;
+    top: 36rem;
+    left: 200px;
+    z-index: 1;
+}
+
+.box3{
+    position: absolute;
+    background-color: #dac52c;
+    display: block;
+    width: 350px;
+    height: 120px;
+    border: 3px solid #dac52c;
+    top: 37rem;
+    left: 300px;
+    z-index: 0;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-left: 70px;
+}
+
+.bi.bi-heart-pulse-fill{
+    position: absolute;
+    width: 82px;
+    top: 24.5rem;
+    left: 185px;
+    z-index: 2;
+}
+
+.icon2{
+    position: absolute;
+    width: 82px;
+    top: 10.4rem;
+    left: 233px;
+    z-index: 2;
+}
+
+.icon3{
+    position: absolute;
+    width: 82px;
+    top: 38.2rem;
+    left: 235px;
+    z-index: 2;
+}
+
+.foto1{
+    margin-left: 69%;
+}
+
+.foto1 img{
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    object-position: -60px 0px;
+    position: absolute;
+    border-radius: 100%;
+    border: 3px solid #dac52c;
+}
+
+.foto2{
+    margin-left: 62%;
+    padding-top: 12%;
+}
+
+.foto2 img{
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    object-position: -120px 0px;
+    border-radius: 100%;
+    border: 3px solid #dac52c;
+}
+
+.foto3{
+    margin-left: 69%;
+    padding-top: 12%;
+}
+
+.foto3 img{
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    object-position: -50px 0px;
+    border-radius: 100%;
+    border: 3px solid #dac52c;
+}
