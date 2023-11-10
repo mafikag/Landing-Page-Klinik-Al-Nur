@@ -44,20 +44,21 @@ body{
 
 .container-slide{
     position: relative;
+    height: 785px;
 }
 
 .img1{
     position: absolute;
     object-fit: cover;
     width: 96rem;
-    height: 775px;
+    height: 785px;
 }
 
 .img2{
     position: absolute;
     object-fit: cover;
     width: 96rem;
-    height: 775px;
+    height: 785px;
 }
 
 .Greet{
@@ -119,23 +120,6 @@ body{
     animation-fill-mode: forwards;
 }
 
-@keyframes slide1-on{
-    0%{margin-left: 100%; opacity: 0;}
-    50%{opacity: 0.5;}
-    100%{margin-left: 0%; opacity: 1;}
-
-}
-@keyframes slide2-on{
-    0%{margin-left: -100%; opacity: 0;}
-    50%{opacity: 0.5;}
-    100%{margin-right: 100%; opacity: 1;}
-}
-
-@keyframes slide-off{
-    0%{opacity: 1;}
-    100%{opacity: 0;}
-}
-
 .about-container{
     position: relative;
     height: 450px;
@@ -160,21 +144,22 @@ body{
 
 .about-hero{
     position: absolute;
-    top: 245px;
+    top: 260px;
     margin-left: 56rem;
-    transition: margin-left 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 
-.hero-img{
+.about-hero img{
     width: 550px;
-    transition: box-shadow 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 .about-hero:hover{
-    margin-left: 55.5rem;
+    margin-left: 55.9rem;
+    top: 258px;
 }
 
-.hero-img:hover{   
+.about-hero img:hover{
     box-shadow: 3px 3px 3px #000;
 }
 
@@ -217,7 +202,7 @@ body{
     width: 350px;
     height: 500px;
     border: 3px solid #dac52c;
-    top: 11rem;
+    top: 10rem;
     left: 155px;
     z-index: 0;
     transition: all 0.2s ease-in;
@@ -262,7 +247,7 @@ body{
     width: 350px;
     height: 500px;
     border: 3px solid #dac52c;
-    top: 11rem;
+    top: 10rem;
     left: 593px;
     z-index: 0;
     transition: all 0.2s ease-in;
@@ -306,12 +291,11 @@ body{
     width: 350px;
     height: 500px;
     border: 3px solid #dac52c;
-    top: 11rem;
+    top: 10rem;
     right: 155px;
     z-index: 0;
     transition: all 0.2s ease-in;
 }
-
 
 .icon3{
     position: absolute;
@@ -335,19 +319,19 @@ body{
 }
 
 .box1:hover {
-    top: 10.7rem;
+    top: 9.7rem;
     left: 152px;
     box-shadow: 3px 3px 4px #000;
 }
 
 .box2:hover {
-    top: 10.7rem;
+    top: 9.7rem;
     left: 590px;
     box-shadow: 3px 3px 4px #000;
 }
 
 .box3:hover {
-    top: 10.7rem;
+    top: 9.7rem;
     right: 158px;
     box-shadow: 3px 3px 4px #000;
 }
@@ -410,7 +394,7 @@ body{
     height: 40px;
     font-family: 'Ubuntu',sans-serif;
     border-radius: 8px;
-    box-shadow: 1px 1px 0px black;
+    box-shadow: 0.5px 0.5px 0px black;
     background-color: #dac52c;
     font-size: 18px;
     font-weight: 450;
