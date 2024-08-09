@@ -65,7 +65,7 @@ body{
     position: relative;
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
-    height: 100vh;
+    height: 101vh;
     padding-top: 20%;
     color: white;
     text-align: center;
@@ -338,7 +338,7 @@ body{
 
 .contact-container{
     position: relative;
-    height: 680px;
+    height: 650px;
 }
 
 .contact-judul{
